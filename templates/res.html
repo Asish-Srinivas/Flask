@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+    </head>
+    <body>
+        {% for key,value in dic.items() %}
+        {# Comment #}
+        <h3>{{key}}</h3>
+        <h3>{{value}}</h3>
+        {% endfor %}
+        {% if dic['marks']>=50 %}
+        <h3>Pass</h3>
+        {% else %}
+        <h3>Fail</h3>
+        {% endif %}
+    </body>
+</html>
